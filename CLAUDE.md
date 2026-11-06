@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 @AGENTS.md
 
-Next.js 16 / React 19 / Tailwind v4 wedding invitation site for Imran & Janet: guest-code landing page → single-page invitation → RSVP form, plus a private `/admin` desk. Deployed on Vercel with Neon Postgres. Not a git repo yet.
+Next.js 16 / React 19 / Tailwind v4 wedding invitation site for Imran & Janet: guest-code landing page → single-page invitation → RSVP form, plus a private `/admin` desk. Deployed on Vercel with Neon Postgres. Repo: github.com/imranbalunan12/janet_imran_wedding (public), branch `main`.
 
 ## Commands
 
