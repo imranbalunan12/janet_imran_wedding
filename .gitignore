@@ -1,0 +1,11 @@
+node_modules
+.next
+out
+.env
+.env.local
+.vercel
+data/rsvps.json
+*.log
+.DS_Store
+*.tsbuildinfo
+.claude/commands/

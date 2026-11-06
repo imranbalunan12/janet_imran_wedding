@@ -1,0 +1,81 @@
+@import "tailwindcss";
+
+:root {
+  --ivory: #fffdf8;
+  --cream: #fff8ea;
+  --petal: #f7ecd0;
+  --butter: #f3e2a7;
+  --gold: #c4a35a;
+  --sage: #8fa07e;
+  --leaf: #6f825e;
+  --ink: #3f3a33;
+  --mute: #7a7368;
+}
+
+@theme inline {
+  --color-ivory: var(--ivory);
+  --color-cream: var(--cream);
+  --color-petal: var(--petal);
+  --color-butter: var(--butter);
+  --color-gold: var(--gold);
+  --color-sage: var(--sage);
+  --color-leaf: var(--leaf);
+  --color-ink: var(--ink);
+  --color-mute: var(--mute);
+  --font-serif: var(--font-serif);
+  --font-sans: var(--font-sans);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--ivory);
+  color: var(--ink);
+  font-family: var(--font-sans), sans-serif;
+}
+
+.font-serif {
+  font-family: var(--font-serif), serif;
+}
+
+.paper {
+  background:
+    radial-gradient(1200px 500px at 10% -10%, rgba(243, 226, 167, 0.45), transparent 55%),
+    radial-gradient(900px 400px at 100% 0%, rgba(143, 160, 126, 0.12), transparent 50%),
+    var(--ivory);
+}
+
+.hairline {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #d9c48a, transparent);
+}
+
+@keyframes fadeSlide {
+  0% { opacity: 0; }
+  12% { opacity: 1; }
+  88% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+.slide-fade {
+  animation: fadeSlide 7s ease-in-out infinite;
+}
+
+@keyframes floaty {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+.floaty {
+  animation: floaty 6s ease-in-out infinite;
+}
+
+input, select, textarea {
+  font-family: inherit;
+}
+
+::selection {
+  background: #f3e2a7;
+}
